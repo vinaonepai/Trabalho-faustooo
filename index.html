@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbum do Palmeiras</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #00440f;
+      color: black;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .album {
+      background-color: #343a40;
+      padding: 2em 0;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .col {
+      flex: 1 1 calc(33.333% - 20px);
+      max-width: calc(33.333% - 20px);
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-body {
+      padding: 15px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-text {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 5px;
+    }
+
+    .btn {
+      padding: 5px 10px;
+      font-size: 12px;
+      color: #333;
+      border: 1px solid #ddd;
+      background-color: #f8f9fa;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color:#6c757d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em 0;
+      background-color: #00440f;
+      color: #6c757d;
+    }
+
+    @media (max-width: 768px) {
+      .col {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .col {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Álbum do Palmeiras</h1>
+  </header>
+
+  <main>
+    <div class="album">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/flaco.webp" alt="Imagem do cartão">
+              <div class="card-body">
+                <p class="card-text">Flaco López</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">23 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/veiga.webp" alt="Imagem do cartão">
+              <div class="card-body">
+                <p class="card-text">Raphael Veiga</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">3d</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/weverton.webp" alt="Imagem do cartão">
+              <div class="card-body">
+                <p class="card-text">Weverton</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">5d</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/estevao.webp" alt="Imagem do cartão">
+              <div class="card-body">
+                <p class="card-text">Estêvão</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">6d</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/mauricio.webp" alt="Imagem do cartão">
+              <div class="card-body">
+                <p class="card-text">Maurício</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">1sem</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/gg.webp" alt="Imagem do cartão">
+              <div class="card-body">
+                <p class="card-text">Gustavo Gómez</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">1sem</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/rios.webp" alt="Imagem do cartão">
+              <div class="card-body">
+                <p class="card-text">Richard Rios</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">2sem</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/rony.webp" alt="Imagem do cartão">
+              <div class="card-body">
+                <p class="card-text">Rony</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">2sem</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/mayke.webp" alt="Imagem do cartão">
+              <div class="card-body">
+                <p class="card-text">Mayke</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">3sem</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/fa.webp" alt="Imagem do cartão de Zé Roberto">
+              <div class="card-body">
+                <p class="card-text">Felipe Anderson</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">4sem</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/dudu.webp" alt="Imagem do cartão de Borja">
+              <div class="card-body">
+                <p class="card-text">Dudu</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">5sem</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/images/marcos.webp" alt="Imagem do cartão de Wesley">
+              <div class="card-body">
+                <p class="card-text">Marcos Rocha</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button class="btn">Ver</button>
+                    <button class="btn">Editar</button>
+                  </div>
+                  <small class="text-muted">6sem</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Me da A sor pfv</p>
+  </footer>
+</body>
+</html>
